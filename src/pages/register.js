@@ -7,11 +7,11 @@ export default function Register({navigation}){
         navigation.navigate('Login')
     }
     return (<View style={style.container}>
-        <View style={style.screen}>
-        <Image style={style.image} source={require('../assets/aguia.png')} />
-        </View>
         <Text style={style.titulo}></Text>
         <View style={style.form}>
+        <View style={style.screen}>
+        <Image style={style.image} source={require('../assets/vitor.png')} />
+        </View>
         <Text style={style.label}></Text>
         <TextInput style={style.input}
         keyboardType="default"
@@ -58,7 +58,7 @@ export default function Register({navigation}){
         <TouchableOpacity style={style.button}><Text style={style.textButton}>Cadastrar</Text></TouchableOpacity>
         <View>
             <TouchableOpacity onPress={goToLogin}>
-                <Text style={style.cadastre}>voltar para o Login</Text>
+                <Text style={style.cadastre}>Voltar para o Login</Text>
             </TouchableOpacity>
         </View>
         </View>
@@ -91,7 +91,7 @@ const style = StyleSheet.create({
     label: {
         fontWeight: 'bold',
         color: '#444',
-        marginBottom: 3,
+        marginBottom: 1,
         marginTop: 1,
     },
     cpf: {
@@ -116,7 +116,6 @@ const style = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#DDD',
         paddingHorizontal: 20,
-        marginBottom: 9,
         fontSize: 14,
         height: 45,
         borderRadius: 5
@@ -142,10 +141,11 @@ const style = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
+        marginBottom: 100
     },
     image: {
-        width: 300,
-        height: 300,
+        width: 200,
+        height: 200,
         borderRadius: 1000,
     }
 
